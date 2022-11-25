@@ -20,11 +20,11 @@ This program is a README.md generator that can create README.md files
 
 ## Link to Project
 
-[https://vanwykkim.github.io/password-generator/]
+[https://vanwykkim.github.io/readme-generator/]
 
 ## Credits
 
-I only created the generate password portion of the Javascript. CSS and HTML were provided by UW bootcamp
+fs and inquirer
 
 ## License
 
