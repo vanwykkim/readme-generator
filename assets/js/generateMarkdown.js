@@ -17,4 +17,34 @@
 // `;
 // }
 
-// module.exports = generateMarkdown;
+function GenerateMarkdown() {
+
+  }
+  
+GenerateMarkdown.prototype.generateMarkdownTitle = function(title, description){
+   return `# ${title}
+
+## Description 
+
+${description}
+
+`;
+};
+
+GenerateMarkdown.prototype.renderLicenseLink = function(license) {
+
+};
+
+
+GenerateMarkdown.prototype.renderLicenseBadge = function(license) {
+
+};
+
+GenerateMarkdown.prototype.generateMarkdownLicense = function(license){
+    `## License
+
+   
+    `
+};
+
+ module.exports = GenerateMarkdown;
