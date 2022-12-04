@@ -25,3 +25,7 @@ UW bootcamp practice code
 Please refer to the LICENSE in the repo.
 
 ## Video of project
+
+
+https://user-images.githubusercontent.com/32083658/205480094-9d314942-35bc-4e0d-821c-16d57864c634.mp4
+
