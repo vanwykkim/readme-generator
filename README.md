@@ -26,6 +26,8 @@ Please refer to the LICENSE in the repo.
 
 ## Video of project
 
+[https://drive.google.com/file/d/1fFnIqvxg8MZxuiG9zsaOfxT7uHdWEDD7/view]
+
 
 
 
