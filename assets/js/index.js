@@ -23,11 +23,10 @@ const questions = () => {
       default: 'Needs a description of the project',
     },
     {
-      type: 'list',
+      type: 'confirm',
       name: 'license',
-      message: 'What license do you want to use?',
-      choices: ["None","Apache License 2.0", "GNU General Public License v3.0","MIT License","Mozilla Public License 2.0"],
-      default: 'None',
+      message: 'Did you use a license in your github repo?',
+      default: false,
     },
     {
       type: 'input',
@@ -56,13 +55,13 @@ const questions = () => {
     {
       type: 'input',
       name: 'username',
-      message: 'Enter your GitHub Username:',
+      message: 'Enter the GitHub Username used for this project:',
       default: "Not Provided/Unavailable",
     },
     {
       type: 'input',
       name: 'repo',
-      message: 'Enter the repo name for this project:',
+      message: 'Enter the repo name for this project(case specific):',
       default: 'Not Provided/Unavailable',
     },
     {
@@ -83,7 +82,7 @@ const init = () => {
     // Use writeFile method imported from fs.promises to use promises instead of
     // a callback function
    // .then(function(answers){console.log("this is the answers "+answers.title+" "+ answers.description);})
-    .then((answers) => {writeFile('README.md', gMD.generateMarkdownTitle(answers.title, answers.description, answers.installation, answers.usage, answers.contributing, answers.test, answers.username, answers.repo, answers.email, answers.license)); appendFile('README.md', gMD.generateMarkdownLicense(answers.license));})
+    .then((answers) => {writeFile('README.md', gMD.generateMarkdownTitle(answers.title, answers.description, answers.installation, answers.usage, answers.contributing, answers.test, answers.username, answers.repo, answers.email, answers.license)); appendFile('README.md', gMD.generateMarkdownLicense(answers.license, answers.username, answers.repo));})
     .then(() => console.log('Successfully wrote to README.md'))
     .catch((err) => console.error(err));
 };

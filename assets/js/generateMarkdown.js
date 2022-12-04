@@ -72,14 +72,18 @@ For further questions please email: ${email}
 
 // TODO: function that returns the license link
 // If there is no license, return an empty string
-GenerateMarkdown.prototype.renderLicenseLink = function(license) {
-    return license;
+GenerateMarkdown.prototype.renderLicenseLink = function(license, username, repo) {
+    if(license){
+    return `https://github.com/${username}/${repo}/blob/main/LICENSE`;
+}else{
+    return "";
+}
 };
 
 // TODO: function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 GenerateMarkdown.prototype.renderLicenseBadge = function(license,username, repo) {
-    if(license !="None"){
+    if(license){
         return `![GitHub License Badge Not Found](https://img.shields.io/github/license/${username}/${repo})`;
     }else{
         return '';
@@ -89,17 +93,16 @@ GenerateMarkdown.prototype.renderLicenseBadge = function(license,username, repo)
 
 // TODO: function that returns the license section of README
 // If there is no license, return an empty string 
-GenerateMarkdown.prototype.generateMarkdownLicense = function(license){
-    if(license !="None"){
-        let licenseLink = this.renderLicenseLink(license)
+GenerateMarkdown.prototype.generateMarkdownLicense = function(license, username, repo){
+    if(license){
+        //let licenseLink = this.renderLicenseLink(license,username,repo)
         return `## License
 
-        ${licenseLink}
-   
-        `;
-    }else {return `## License
+Link to license: [${this.renderLicenseLink(license,username,repo)}]`;
+    }else{
+        return `## License
 
-No license specified
+No github license specified
 `
     ;}
    

@@ -1,6 +1,6 @@
 # Project Title 
 
-![GitHub License Badge Not Found](https://img.shields.io/github/license/vanwykkim/test)
+
 
 ## Description 
 
@@ -41,14 +41,12 @@ Not Provided
 
 ## Questions
 
-Github username: vanwykkim
+Github username: Not Provided/Unavailable
 
-GitHub link to repo: [https://github.com/vanwykkim/test]
+GitHub link to repo: [https://github.com/Not Provided/Unavailable/Not Provided/Unavailable]
 
 For further questions please email: Not Provided/Unavailable
 
 ## License
 
-        Apache License 2.0
-   
-        
+No github license specified
