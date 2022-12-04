@@ -1,18 +1,47 @@
-# Title
+# my project
 
 ## Description 
 
-how i like this program
+id dd  \n -hello /n -hello2
 
-# Title
+## Table of Contents
 
-## Description 
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Credits](#credits)
+- [Tests](#tests)
+- [Questions](#questions)
+- [License](#license)
 
-how i like this program
+# Installation
 
-# Title
+don't have any
 
-## Description 
+# Usage 
 
-how i like this program
+not sure
 
+## Contributing
+
+[Contributor Covenant](https://www.contributor-covenant.org/)
+
+## Credits
+
+don't have any
+
+## Tests
+
+To run the tests:
+run them
+
+## Questions
+
+Github username: kk
+GitHub link to profile: [dkald.com]
+
+For further questions please email: email@emia.com
+
+## License
+
+No license specified
