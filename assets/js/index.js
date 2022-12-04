@@ -61,8 +61,8 @@ const questions = () => {
     },
     {
       type: 'input',
-      name: 'url',
-      message: 'Enter the URL to your GitHub profile:',
+      name: 'repo',
+      message: 'Enter the repo name for this project:',
       default: 'Not Provided/Unavailable',
     },
     {
@@ -83,7 +83,7 @@ const init = () => {
     // Use writeFile method imported from fs.promises to use promises instead of
     // a callback function
    // .then(function(answers){console.log("this is the answers "+answers.title+" "+ answers.description);})
-    .then((answers) => {writeFile('README.md', gMD.generateMarkdownTitle(answers.title, answers.description, answers.installation, answers.usage, answers.contributing, answers.test, answers.username, answers.url, answers.email, answers.license)); appendFile('README.md', gMD.generateMarkdownLicense(answers.license));})
+    .then((answers) => {writeFile('README.md', gMD.generateMarkdownTitle(answers.title, answers.description, answers.installation, answers.usage, answers.contributing, answers.test, answers.username, answers.repo, answers.email, answers.license)); appendFile('README.md', gMD.generateMarkdownLicense(answers.license));})
     .then(() => console.log('Successfully wrote to README.md'))
     .catch((err) => console.error(err));
 };

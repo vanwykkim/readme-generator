@@ -1,8 +1,10 @@
-# my project
+# Project Title 
+
+![GitHub License Badge Not Found](https://img.shields.io/github/license/vanwykkim/test)
 
 ## Description 
 
-id dd  \n -hello /n -hello2
+Needs a description of the project
 
 ## Table of Contents
 
@@ -14,34 +16,39 @@ id dd  \n -hello /n -hello2
 - [Questions](#questions)
 - [License](#license)
 
-# Installation
+## Installation
 
-don't have any
+Not Provided
 
-# Usage 
+## Usage 
 
-not sure
+Not Provided
 
 ## Contributing
+
+If wishing to contribute please follow the Contributor Covenant:
 
 [Contributor Covenant](https://www.contributor-covenant.org/)
 
 ## Credits
 
-don't have any
+Not Provided/No Credits
 
 ## Tests
 
 To run the tests:
-run them
+Not Provided
 
 ## Questions
 
-Github username: kk
-GitHub link to profile: [dkald.com]
+Github username: vanwykkim
 
-For further questions please email: email@emia.com
+GitHub link to repo: [https://github.com/vanwykkim/test]
+
+For further questions please email: Not Provided/Unavailable
 
 ## License
 
-No license specified
+        Apache License 2.0
+   
+        

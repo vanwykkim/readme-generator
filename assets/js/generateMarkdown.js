@@ -14,10 +14,12 @@ function GenerateMarkdown() {
 // TODO: function to generate markdown for README
 // function generateMarkdown(data) {
 //   return `# ${data.title}
-GenerateMarkdown.prototype.generateMarkdownTitle = function(title, description, installation, usage, credits, tests, username, url, email, license){
+GenerateMarkdown.prototype.generateMarkdownTitle = function(title, description, installation, usage, credits, tests, username, repo, email, license){
+    myBadge = this.renderLicenseBadge(license, username, repo);
     
-    
-    return `# ${title}
+    return `# ${title} 
+
+${myBadge}
 
 ## Description 
 
@@ -60,7 +62,7 @@ ${tests}
 
 Github username: ${username}
 
-GitHub link to profile: [${url}]
+GitHub link to repo: [https://github.com/${username}/${repo}]
 
 For further questions please email: ${email}
 
@@ -71,13 +73,17 @@ For further questions please email: ${email}
 // TODO: function that returns the license link
 // If there is no license, return an empty string
 GenerateMarkdown.prototype.renderLicenseLink = function(license) {
-
+    return license;
 };
 
 // TODO: function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-GenerateMarkdown.prototype.renderLicenseBadge = function(license) {
-
+GenerateMarkdown.prototype.renderLicenseBadge = function(license,username, repo) {
+    if(license !="None"){
+        return `![GitHub License Badge Not Found](https://img.shields.io/github/license/${username}/${repo})`;
+    }else{
+        return '';
+    }
 };
 
 
@@ -85,12 +91,9 @@ GenerateMarkdown.prototype.renderLicenseBadge = function(license) {
 // If there is no license, return an empty string 
 GenerateMarkdown.prototype.generateMarkdownLicense = function(license){
     if(license !="None"){
-        let badge = this.renderLicenseBadge(license);
-        let licenseLink = this.generateLicenseLink(license)
-
+        let licenseLink = this.renderLicenseLink(license)
         return `## License
 
-        ${badge} 
         ${licenseLink}
    
         `;
